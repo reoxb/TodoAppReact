@@ -15,7 +15,7 @@ const TableBody = props => {
     const rows = props.items.map((item, index) => {
         return (
             <tr key={index}>
-                <td>{item.name}</td>
+                <td>{item.task}</td>
                 <td><button onClick={ () => props.removeTask(index) }>Delete</button></td>
             </tr>
         );
